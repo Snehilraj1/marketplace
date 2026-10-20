@@ -23,3 +23,9 @@ app.include_router(users.router)
 app.include_router(auth.router)
 app.include_router(items.router)
 app.include_router(likes.router)
+
+
+@app.get("/")
+def guide():
+    return {"message": "open the docs"}
+
